@@ -1,0 +1,17 @@
+{
+  "name": "gulp-cloudfront-invalidate",
+  "version": "1.0.0",
+  "description": "Invalidates stream of files in cloudfront",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1.36",
+    "gulp-util": "^3.0.6",
+    "through2": "^2.0.0",
+    "underscore": "^1.8.3"
+  }
+}
