@@ -35,10 +35,10 @@ module.exports = function(credentials, options) {
       InvalidationBatch: invalidationBatch
     }, function(err, res) {
       if (err) {
-        gutil.error('gulp-invalidate-cloudfront: ' + err);
+        gutil.error('gulp-cloudfront-invalidate: ' + err);
         cb(false);
       } else {
-        gutil.log('gulp-invalidate-cloudfront: created ' + res.Invalidation.Id);
+        gutil.log('gulp-cloudfront-invalidate: created ' + res.Invalidation.Id);
         cb();
       }
     });
