@@ -35,7 +35,7 @@ module.exports = function(credentials, options) {
       InvalidationBatch: invalidationBatch
     }, function(err, res) {
       if (err) {
-        gutil.error('gulp-cloudfront-invalidate: ' + err);
+        gutil.log(gutil.colors.red('gulp-cloudfront-invalidate: ' + err));
         cb(false);
       } else {
         gutil.log('gulp-cloudfront-invalidate: created ' + res.Invalidation.Id);
